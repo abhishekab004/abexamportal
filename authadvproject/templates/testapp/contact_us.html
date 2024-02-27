@@ -1,0 +1,28 @@
+{% extends "testapp/base.html" %}
+
+
+{% block body %}
+
+<div class="row">
+    <div class="col-11 offset-1">
+        <h1>Do you have any queries ????</h1>
+        <h4>Feel free to contact us</h4>
+        <h5>Fill the form with your quaries....</h5>
+    </div>
+</div>
+
+<div class="col-7 offset-3">
+
+    
+    <form action="" method="post" id='con'>
+        {% csrf_token %}
+        {{form.as_p}}
+        <input type="submit" value="Submit">
+    </form> 
+
+
+
+</div>
+      
+      
+{% endblock body %}
